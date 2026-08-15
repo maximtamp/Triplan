@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1BF8E09030309E5400D99D40 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1BF8E08F30309E5400D99D40 /* MCEmojiPicker */; };
+		1BF8E09230309E5400D99D40 /* MCEmojiPickerJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1BF8E09130309E5400D99D40 /* MCEmojiPickerJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1BF8E054302B7CB100D99D40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF8E09030309E5400D99D40 /* MCEmojiPicker in Frameworks */,
+				1BF8E09230309E5400D99D40 /* MCEmojiPickerJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = Triplan;
 			packageProductDependencies = (
+				1BF8E08F30309E5400D99D40 /* MCEmojiPicker */,
+				1BF8E09130309E5400D99D40 /* MCEmojiPickerJSON */,
 			);
 			productName = Triplan;
 			productReference = 1BF8E046302B7CAF00D99D40 /* Triplan.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 1BF8E03D302B7CAF00D99D40;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1BF8E08E30309E5400D99D40 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1BF8E047302B7CAF00D99D40 /* Products */;
 			projectDirPath = "";
@@ -578,6 +590,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BF8E08E30309E5400D99D40 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/izyumkin/MCEmojiPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BF8E08F30309E5400D99D40 /* MCEmojiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BF8E08E30309E5400D99D40 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			productName = MCEmojiPicker;
+		};
+		1BF8E09130309E5400D99D40 /* MCEmojiPickerJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BF8E08E30309E5400D99D40 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			productName = MCEmojiPickerJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BF8E03E302B7CAF00D99D40 /* Project object */;
 }

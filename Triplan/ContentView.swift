@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab = 0
+    
     var body: some View {
-        HStack {
-            Button("apple") {
-                
+        TabView(selection: $selectedTab) {
+            Tab("Home", systemImage: "house", value: 0) {
+                Home(selectedTab: $selectedTab)
+            }
+            Tab("Trips", systemImage: "suitcase.fill", value: 1) {
+                Trips()
             }
         }
     }

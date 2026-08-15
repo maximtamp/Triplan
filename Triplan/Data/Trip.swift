@@ -8,25 +8,25 @@
 import Foundation
 import SwiftData
 
+@Model
 class Trip {
     var id: UUID = UUID()
     var name: String
     var icon: String?
     var startDate: Date
     var endDate: Date
-    var description: String?
-    var activities: [Activity]
-    var flights: [Flight]
-    var overnightStays: [OvernightStay]
-    var transportations: [Transportation]
+    var tripDescription: String?
+    var activities: [String]
+    var flights: [String]
+    var overnightStays: [String]
+    var transportations: [String]
     
-    init(id: UUID, name: String, icon: String? = nil, startDate: Date, endDate: Date, description: String? = nil, activities: [Activity], flights: [Flight], overnightStays: [OvernightStay], transportations: [Transportation]) {
-        self.id = id
+    init(name: String, icon: String? = nil, startDate: Date, endDate: Date, tripDescription: String? = nil, activities: [String], flights: [String], overnightStays: [String], transportations: [String]) {
         self.name = name
         self.icon = icon
         self.startDate = startDate
         self.endDate = endDate
-        self.description = description
+        self.tripDescription = tripDescription
         self.activities = activities
         self.flights = flights
         self.overnightStays = overnightStays

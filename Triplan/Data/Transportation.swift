@@ -22,7 +22,7 @@ class Transportation {
     var duration: TimeInterval
     var distance: Double
     
-    init(id: UUID, locationA: (latitude: Double, longitude: Double), locationB: (latitude: Double, longitude: Double), transportationType: TransportationType, duration: TimeInterval, distance: Double) {
+    init(id: UUID, locationA: (name: String, latitude: Double, longitude: Double), locationB: (name: String, latitude: Double, longitude: Double), transportationType: TransportationType, duration: TimeInterval, distance: Double) {
         self.id = id
         self.locationA = locationA
         self.locationB = locationB

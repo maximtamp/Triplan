@@ -20,7 +20,7 @@ class Activity {
     var images: [URL]?
     var price: Double
     
-    init(id: UUID, name: String, icon: String? = nil, date: Date, startTime: Date, endTime: Date, location: (latitude: Double, longitude: Double), description: String? = nil, images: [URL]? = nil, price: Double) {
+    init(id: UUID, name: String, icon: String? = nil, date: Date, startTime: Date, endTime: Date, location: (name: String, latitude: Double, longitude: Double), description: String? = nil, images: [URL]? = nil, price: Double) {
         self.id = id
         self.name = name
         self.icon = icon
